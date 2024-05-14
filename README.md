@@ -1,8 +1,7 @@
 # Cafe Order Management System
 
 ## Overview
-The Café Management System is designed to streamline operations in cafes or coffee shops by efficiently handling customer orders from request to delivery. It serves as a central hub for processing, monitoring, and managing customer requests, enhancing customer satisfaction, reducing errors, and optimizing operational efficiency.
-Tasks such as order placement, order tracking and status updates, inventory management, customer management, and employee management can be performed using SQL queries on the database. This software minimizes the need for manual work, reduces the risk of errors, and maintains a reliable, accessible, and organized data log.
+A Café Management System is created to make iteasier for cafes or coffee shops to handle customer orders effectively. From the time a request is made until it is delivered to the customer, it acts as a central hub for processing, monitoring and managing requests from the customer happiness, decreasing errors and optimizing operational efficiency.Tasks like Order Placement, Order Tracking and Status Update, Inventory Management, CustomerManagement and Employee Management can be carried out via SQL Queries to such a database. Such Software eliminates the need of manual work and minimizes the chances of manual errors, while keeping reliable, accessible and organized data log of all in the database.
 
 ## Features
 - **Menu Management:** Add, update, and delete menu items.
