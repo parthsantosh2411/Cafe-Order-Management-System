@@ -91,10 +91,9 @@ CREATE TABLE Login (
   PRIMARY KEY (username, role)
 );
 
--- Populate CoffeeShop
+
 INSERT INTO CoffeeShop (name) VALUES ('Cafe A');
 
--- Populate Customer
 INSERT INTO Customer (name, email, phone_no, date_of_birth, cafe_id) VALUES
 ('John Doe', 'john@example.com', '1234567890', '1990-01-15', 1),
 ('Alice Smith', 'alice@example.com', '9876543210', '1985-05-20', 1),
@@ -115,7 +114,7 @@ INSERT INTO Items (item_name, price, cafe_id) VALUES
 ('Burger', 6.00, 1),
 ('Fries', 2.50, 1);
 
--- Populate OrderItems
+
 INSERT INTO OrderItems (order_id, item_id, qty, dish_name, status) VALUES
 (1, 1, 2, 'Coffee','pending'),
 (1, 2, 1, 'Tea','served'),
@@ -124,7 +123,6 @@ INSERT INTO OrderItems (order_id, item_id, qty, dish_name, status) VALUES
 (3, 5, 1, 'Coffee','pending'),
 (3, 6, 1, 'Tea','pending');
 
--- Populate Employee
 INSERT INTO Employee (name, phone_no, date_of_birth, date_of_joining, address, gender, cafe_id) VALUES
 ('Michael Scott', '555-1234', '1980-05-15', '2000-01-01', '123 Main St, Scranton, PA', 'Male', 1),
 ('Dwight Schrute', '555-5678', '1985-10-20', '2000-01-01', '456 Beet Rd, Scranton, PA', 'Male', 1),
@@ -132,7 +130,7 @@ INSERT INTO Employee (name, phone_no, date_of_birth, date_of_joining, address, g
 ('Jim Halpert', '555-1357', '1978-12-01', '2000-01-01', '321 Sales St, Scranton, PA', 'Male', 1),
 ('Stanley Hudson', '555-9876', '1960-07-12', '2000-01-01', '987 Crossword Ln, Scranton, PA', 'Male', 1);
 
--- Populate Manager, Chef, Barista
+
 INSERT INTO Manager (emp_id, experience) VALUES
 (1, '10 years'),
 (2, '8 years');
@@ -143,13 +141,13 @@ INSERT INTO Barista (emp_id, expertise) VALUES
 (5, 'Espresso'),
 (1, 'Brewing');
 
--- Populate Bills
+
 INSERT INTO Bills (order_id, total_amt, tip_amt) VALUES
 (1, 7.00, 1.50),
 (2, 8.50, 2.00),
 (3, 8.50, NULL);
 
--- Populate Login
+
 INSERT INTO Login (username, password, role) VALUES
 ('admin', 'admin123', 'admin'),
 ('manager', 'manager123', 'manager'),
